@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+
+/* Адаптивные стили для контейнера */
+#container {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Центрирование контейнера на странице */
+  padding: 20px; /* Добавляем немного отступов */
+  box-sizing: border-box; /* Учитываем padding в общей ширине */
+}
+
+/* Адаптивные стили для текста */
+#text-wrapper {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #4e4b4e;
+}
+
+#text {
+  font-size: 18px; /* Размер текста в зависимости от ширины экрана */
+  font-weight: bold;
+}
+
+/* Добавляем стили для адаптивной анимации сердечка */
+#Heart {
+  transform-origin: center;
+  animation: heartbeat 1s infinite alternate;
+  width: 20vw; /* Размер сердечка в зависимости от ширины экрана */
+}
+
+@keyframes heartbeat {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.1);
+  }
+}
